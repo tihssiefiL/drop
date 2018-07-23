@@ -1,0 +1,53 @@
+body {
+	background: #fff;
+}
+#container {
+    box-sizing: border-box;
+	text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box {
+    box-sizing: border-box;
+	height: 120px;
+	width: 80px;
+	background:  rgb(12, 219, 185);
+	margin: 10px auto;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+
+.hold {
+    box-sizing: border-box;
+	background: rgba(170, 170, 170, 0.808);
+}
+
+.dragged {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+	min-height:120px;
+    min-width: 100px;
+    max-width: 120px;
+	padding: 10px;
+	display: inline-block;
+	transition: 0.3s ease-in-out;
+	border-radius: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hoveredOf {
+    box-sizing: border-box;
+    padding: 1px;
+    border: 1px solid red;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.hoveredDisable {
+    box-sizing: border-box;
+    border: 1px solid red;
+    background-color: rgb(255, 0, 0);
+	box-shadow: 0 0 20px rgb(255, 0, 0);
+}

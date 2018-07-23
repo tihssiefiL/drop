@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="dragged" dragcontent dragmax='2'>this can contain 2 div, the other can contain 1 div
+            <div class="box" draggable="true" ondragstart="dragstart_handler(event);"></div>
+        </div>
+        <div class="dragged" dragcontent>
+            <div class="box" draggable="true" ondragstart="dragstart_handler(event);"></div>
+        </div>
+        <div class="dragged" dragcontent dragmax='2'></div>
+        <div class="dragged" dragcontent></div>
+        <div class="dragged">i can't contain anything </div>
+    </div>
+
+
+</body>
+<script src="drag.js">
+</script>
+
+</html>
